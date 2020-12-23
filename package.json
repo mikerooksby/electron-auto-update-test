@@ -1,0 +1,24 @@
+{
+  "name": "electron-auto-update-test",
+  "version": "1.0.0",
+  "description": "Installer & auto update test",
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:mikerooksby/electron-auto-update-test.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --mac --win --publish never",
+    "deploy": "electron-builder build --mac --win --publish always"
+  },
+  "author": "Mike Rooksby",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.5"
+  }
+}
